@@ -10,7 +10,7 @@ import {
 export default function PraadnyaH() {
   return (
     <div>
-      <Button>Click me</Button>
+      <Button>Im Praadnya</Button>
       <Accordion type="single" collapsible>
   <AccordionItem value="item-1">
     <AccordionTrigger>Is it accessible?</AccordionTrigger>
