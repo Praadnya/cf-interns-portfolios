@@ -6,7 +6,7 @@ import PraadnyaH from "./pages/profiles/PraadnyaH";
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
+      <Routes> 
         <Route path="/" element={<Home />}></Route>
         <Route path="/praadnya-h" element={<PraadnyaH />}></Route>
       </Routes>
