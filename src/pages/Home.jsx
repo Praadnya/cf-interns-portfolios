@@ -2,17 +2,26 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { MenuIcon, X } from "lucide-react";
-import praadnya from '../assets/Praadnya.jpg'
+import Aditi from '../assets/Aditi.jpg'
+// import Aditi from '../assets/Aditi.jpg'
+import praadnya from '../assets/praadnya.jpg'
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const interns = [
+ 
     { 
       id: 1, 
-      name: "Praadnya", 
-      path: "/praadnya-h", 
-      image: praadnya
+      name: "Aditi", 
+      path: "/aditi-goyal", 
+      image: Aditi
     },
+    {
+      id:2,
+      name:"Praadnya",
+      path:"/praadnya-h",
+      image: praadnya
+    }
     // Add other interns similarly
   ];
 
