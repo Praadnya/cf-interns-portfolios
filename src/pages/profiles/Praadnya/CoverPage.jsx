@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Card } from '@/components/ui/card';
 import { Github, Linkedin } from 'lucide-react';
-import profile from '../../../assets/Praadnya.jpg'
+import profile from '../../../assets/Praadnya/Praadnya.jpg'
 
 const CoverPage = ({ data }) => {
   return (

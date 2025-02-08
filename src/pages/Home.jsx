@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { MenuIcon, X } from "lucide-react";
-import praadnya from '../assets/Praadnya.jpg'
+import praadnya from '../assets/Praadnya/Praadnya.jpg'
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
