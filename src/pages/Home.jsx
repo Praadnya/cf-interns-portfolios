@@ -14,6 +14,13 @@ const Home = () => {
       image: praadnya
     },
     // Add other interns similarly
+    { 
+      id: 1, 
+      name: "Praadnya", 
+      path: "/praadnya-h", 
+      image: praadnya
+    },
+    
   ];
 
   return (
