@@ -1,9 +1,8 @@
-import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
-function DhatriNavbar() {
+function DhatriNavbar({ setCurrentPage, currentPage }) {
     const [isScrolled, setIsScrolled] = useState(false);
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -17,71 +16,66 @@ function DhatriNavbar() {
         <header className="fixed top-0 left-0 w-full z-50">
             <nav className={`
                 w-full px-8 py-2 h-14
-                flex justify-between items-center
+                flex items-center
                 border-b border-[#233554] 
                 transition-all duration-300
                 ${isScrolled 
                     ? 'bg-[rgba(10,25,47,0.95)] backdrop-blur-md shadow-[0_2px_10px_rgba(100,255,218,0.15)]'
                     : 'bg-gradient-to-r from-[#0a192f] to-[#172a45] shadow-[0_1px_8px_rgba(100,255,218,0.15)]'}
             `}>
-                <a href="/dhatri" 
-                    className="text-[#64ffda] text-lg font-bold uppercase tracking-wide
-                        font-mono relative pl-5 no-underline
-                        transition-all duration-300 hover:-translate-y-0.5
-                        before:content-['>'] before:absolute before:left-0 
-                        before:text-[#233554] before:animate-[blink_1s_step-end_infinite]">
-                    Dhatri
-                </a>
+                {/* Left side - Projects text */}
+                <div className="flex-none">
+                    <a 
+                        onClick={() => setCurrentPage('home')}
+                        className="text-[#64ffda] text-lg font-bold uppercase tracking-wide
+                            font-mono relative pl-5 no-underline cursor-pointer
+                            transition-all duration-300 hover:-translate-y-0.5
+                            before:content-['>'] before:absolute before:left-0 
+                            before:text-[#233554] before:animate-[blink_1s_step-end_infinite]">
+                        Dhatri
+                    </a>
+                </div>
 
-                {/* Desktop Navigation */}
-                <ul className={`
-                    flex items-center gap-4 m-0 p-0 list-none
-                    transition-all duration-300
-                    md:relative md:flex md:flex-row md:top-auto md:w-auto md:bg-transparent
-                    sm:fixed sm:flex-col sm:w-full sm:left-0 sm:bg-[rgba(10,25,47,0.98)]
-                    sm:border-b sm:border-[#233554] sm:shadow-lg
-                    ${isMobileMenuOpen ? 'sm:top-14' : 'sm:-top-full'}
-                `}>
-                    {[
-                        { to: "/dhatri", text: "Home", end: true },
-                        { to: "/dhatri/education", text: "Education" },
-                        { to: "/dhatri/experience", text: "Experience" },
-                        { to: "/dhatri/projects", text: "Projects" }
-                    ].map((link) => (
-                        <li key={link.text} className="sm:w-full">
-                            <NavLink
-                                to={link.to}
-                                end={link.end}
-                                onClick={() => setIsMobileMenuOpen(false)}
-                                className={({ isActive }) => `
-                                    block px-3 py-1.5 
-                                    text-[#64ffda] text-sm font-medium 
-                                    font-mono no-underline rounded
-                                    transition-all duration-300
-                                    hover:-translate-y-0.5 
-                                    hover:bg-[#172a45] hover:shadow-[0_0_5px_rgba(100,255,218,0.15)]
-                                    sm:text-center sm:py-3 sm:px-4
-                                    ${isActive 
-                                        ? 'bg-[#172a45] border border-[#233554] shadow-[0_0_8px_rgba(100,255,218,0.15)]' 
-                                        : ''}
-                                `}>
-                                {link.text}
-                            </NavLink>
-                        </li>
-                    ))}
-                </ul>
+                {/* Center - Navigation items */}
+                <div className="flex-grow flex justify-center">
+                    <ul className="flex items-center gap-4 m-0 p-0 list-none">
+                        {[
+                            { id: 'home', text: "Home", end: true },
+                            { id: 'education', text: "Education" },
+                            { id: 'experience', text: "Experience" },
+                            { id: 'projects', text: "Projects" }
+                        ].map((link) => (
+                            <li key={link.text}>
+                                <a
+                                    onClick={() => setCurrentPage(link.id)}
+                                    className={`
+                                        block px-3 py-1.5 
+                                        text-[#64ffda] text-sm font-medium 
+                                        font-mono no-underline rounded cursor-pointer
+                                        transition-all duration-300
+                                        hover:-translate-y-0.5 
+                                        hover:bg-[#172a45] hover:shadow-[0_0_5px_rgba(100,255,218,0.15)]
+                                        ${currentPage === link.id 
+                                            ? 'bg-[#172a45] border border-[#233554] shadow-[0_0_8px_rgba(100,255,218,0.15)]' 
+                                            : ''}
+                                    `}>
+                                    {link.text}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
 
-                {/* Mobile Menu Button */}
-                <button 
-                    className="hidden sm:block text-[#64ffda] text-xl p-1 
-                        hover:bg-[#172a45] rounded transition-colors duration-300"
-                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                    aria-label="Toggle menu">
-                    {isMobileMenuOpen ? '×' : '☰'}
-                </button>
+                {/* Right side - Empty div for balance */}
+                <div className="flex-none w-[87px]"></div> {/* Width matches the Projects text width */}
             </nav>
         </header>
     );
 }
+
+DhatriNavbar.propTypes = {
+    setCurrentPage: PropTypes.func.isRequired,
+    currentPage: PropTypes.string.isRequired
+};
 
 export default DhatriNavbar;

@@ -1,9 +1,9 @@
 function Projects() {
   const projects = [
     {
-      name: "Project One",
-      description: "Description of Project One.",
-      github: "https://github.com/project-one",
+      name: "Shakthi",
+      description: "WEbsite for Women Empowerment",
+      github: "https://github.com/DhatriC123/Shakti",
       liveDemo: "https://project-one.com"
     },
     {
