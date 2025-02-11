@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import Education from "./Education";
 import Experience from "./Experience";
 
-const ExEd = () => {
+
+const ExEd = ({data}) => {
   const [selectedItem, setSelectedItem] = useState("Experience");
 
   const handleItemClick = (item) => {
@@ -54,7 +55,7 @@ const ExEd = () => {
         </div>
 
         {/* Display selected component */}
-        {selectedItem === "Experience" ? <Experience /> : <Education />}
+        {selectedItem === "Experience" ? <Experience data={data}/> : <Education data={data}/>}
       </div>
     </section>
   );

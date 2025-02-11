@@ -8,7 +8,11 @@ const skills = [
       { name: "Express.js", level: "Intermediate" },
       { name: "MongoDB", level: "Intermediate" },
       { name: "MYSQL", level: "Intermediate" },
-      { name: "Svelte", level: "Beginner" },
+      { name: "Java", level: "Intermediate" },
+      { name: "Next.js", level: "Intermediate" },
+      { name: "C/C++", level: "Intermediate" },
+
+
     ],
   },
   {
