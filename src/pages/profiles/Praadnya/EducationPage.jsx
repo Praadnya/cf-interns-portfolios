@@ -17,7 +17,7 @@ const EducationPage = ({ education }) => {
 
   const hackathons = [
     "Kodikon: Built a website for safety of women!",
-    "WEAL Hackathon: Built a wensite to help retired soldiers settle into society!"
+    "WEAL Hackathon: Built a website to help retired soldiers settle into society!"
   ]
 
   return (

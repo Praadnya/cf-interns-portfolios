@@ -6,12 +6,14 @@ import { Card } from '@/components/ui/card';
 import intelImage from '../../../assets/Praadnya/company-1.jpeg'
 import infosysImage from '../../../assets/Praadnya/company-2.jpeg';
 import iiscImage from '../../../assets/Praadnya/company-3.jpeg';
+import a3tTech from '../../../assets/Praadnya/company-4.png';
 
 const getCompanyImage = (company) => {
   const imageMap = {
     'Intel': intelImage,
     'Infosys': infosysImage,
-    'Indian Institute of Science': iiscImage
+    'Indian Institute of Science': iiscImage,
+    'A3T Technologies': a3tTech
   };
   return imageMap[company] || '';
 };

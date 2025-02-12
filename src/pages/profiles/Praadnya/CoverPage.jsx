@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Card } from '@/components/ui/card';
-import { Github, Linkedin } from 'lucide-react';
+import { Github, Linkedin, FileDown } from 'lucide-react';
 import profile from '../../../assets/Praadnya/Praadnya.jpg'
+import resume from '../../../assets/Praadnya/resume.pdf'
 
 const CoverPage = ({ data }) => {
   return (
@@ -184,6 +185,15 @@ const CoverPage = ({ data }) => {
               >
                 <Github size={20} />
                 <span>GitHub</span>
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.1 }}
+                href={resume}
+                download="Praadnya_Resume.pdf"
+                className="flex items-center gap-2 bg-[#d4b595] px-4 py-2 rounded-full text-[#fff9f0]"
+              >
+                <FileDown size={20} />
+                <span>Resume</span>
               </motion.a>
             </div>
             <div className="flex gap-4 text-[#8b7355]">
