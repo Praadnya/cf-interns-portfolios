@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { MenuIcon, X } from "lucide-react";
-import praadnya from '../assets/Praadnya.jpg'
+import praadnya from '../assets/Praadnya.jpg';
+import kenny from '../assets/Kenny.jpg';
+
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -13,12 +15,17 @@ const Home = () => {
       path: "/praadnya-h", 
       image: praadnya
     },
-    // Add other interns similarly
+    { 
+      id: 2, 
+      name: "Kenny", 
+      path: "/kenny", 
+      image: kenny
+    }
   ];
 
   return (
     <div className="min-h-screen w-full flex flex-col">
-      {/* Navbar - added w-full */}
+      {/* Navbar */}
       <nav className="bg-white shadow-lg w-full">
         <div className="w-full max-w-[2000px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
@@ -55,12 +62,10 @@ const Home = () => {
         )}
       </nav>
 
-      {/* Main Content - updated container width and padding */}
+      {/* Main Content */}
       <main className="flex-grow w-full">
         <div className="max-w-[2000px] mx-auto px-4 py-8 w-full">
           <h2 className="text-3xl font-bold text-center mb-12">Our Interns</h2>
-          
-          {/* Updated grid to ensure full width coverage */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 w-full place-items-center">
             {interns.map((intern) => (
               <Link
@@ -84,7 +89,7 @@ const Home = () => {
         </div>
       </main>
 
-      {/* Footer - added w-full */}
+      {/* Footer */}
       <footer className="bg-gray-800 text-white w-full">
         <div className="max-w-[2000px] mx-auto px-4 py-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
