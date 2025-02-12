@@ -1,18 +1,37 @@
 import { useEffect, useState } from "react";
-
-import API from "../axios";  
-; // Import the Axios instance
+import API from "../axios";
 
 function Education() {
   const [education, setEducation] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Static fallback data
+  const staticEducation = [
+    {
+      institution: "PES",
+      startYear: "2021",
+      endYear: "2025",
+      cgpa: "8.11 "
+    },
+    {
+      institution: "NPS",
+      startYear: "2005",
+      endYear: "2021",
+      cgpa: "10"
+    }
+  ];
 
   useEffect(() => {
-    API.get("http://localhost:8080/intern/Dhatri C") // Replace with actual API endpoint
+    API.get("http://localhost:8080/intern/Dhatri C")
       .then((response) => {
         setEducation(response.data);
+        setIsLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching education data:", error);
+        // Set static data if API fails
+        setEducation({ education: staticEducation });
+        setIsLoading(false);
       });
   }, []);
 
@@ -27,7 +46,6 @@ function Education() {
                 ◆ ◆ ◆
               </span>
             </div>
-            
 
             <h1 className="text-4xl font-semibold text-center mb-12 mt-6 tracking-wider text-[#64ffda] relative before:content-['>'] before:absolute before:-left-8 before:text-[#233554] before:animate-[blink_1s_step-end_infinite]">
               Education
@@ -35,27 +53,21 @@ function Education() {
 
             {/* Education Items */}
             <div className="space-y-8 md:space-y-12">
-              {education ?.education ?(
-                education.education.map((edu) => (
-                    <>
-                  <div
-                    //key={index}
-                    className="relative p-6 md:p-8 border border-[#233554] rounded-lg bg-[rgba(10,25,47,0.8)] transition-all duration-300 ease-in-out hover:translate-x-2.5 hover:bg-[#172a45] hover:shadow-[0_0_15px_rgba(100,255,218,0.15)] hover:border-[#64ffda]"
-                  >
-                    <h3 className="text-2xl ml-6 mb-6 text-[#64ffda] relative before:content-['>'] before:absolute before:-left-6 before:text-[#233554] before:opacity-80">
-                      {edu.institution}
-                    </h3>
-                    <div className="space-y-2 pl-6">
-                      <p className="text-[#8892b0] text-lg">startYear: {edu.startYear}</p>
-                      <p className="text-[#8892b0] text-lg">endYear: {edu.endYear}</p>
-                      <p className="text-[#8892b0] text-lg">Score: {edu.cgpa}</p>
-                    </div>
+              {(education?.education || staticEducation).map((edu, index) => (
+                <div
+                  key={index}
+                  className="relative p-6 md:p-8 border border-[#233554] rounded-lg bg-[rgba(10,25,47,0.8)] transition-all duration-300 ease-in-out hover:translate-x-2.5 hover:bg-[#172a45] hover:shadow-[0_0_15px_rgba(100,255,218,0.15)] hover:border-[#64ffda]"
+                >
+                  <h3 className="text-2xl ml-6 mb-6 text-[#64ffda] relative before:content-['>'] before:absolute before:-left-6 before:text-[#233554] before:opacity-80">
+                    {edu.institution}
+                  </h3>
+                  <div className="space-y-2 pl-6">
+                    <p className="text-[#8892b0] text-lg">startYear: {edu.startYear}</p>
+                    <p className="text-[#8892b0] text-lg">endYear: {edu.endYear}</p>
+                    <p className="text-[#8892b0] text-lg">Score: {edu.cgpa}</p>
                   </div>
-                  </>
-                ))
-              ) : (
-                <p className="text-[#8892b0] text-lg text-center">Loading education data...</p>
-              )}
+                </div>
+              ))}
             </div>
           </div>
         </div>
