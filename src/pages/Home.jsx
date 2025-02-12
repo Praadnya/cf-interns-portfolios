@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { MenuIcon, X } from "lucide-react";
 import praadnya from '../assets/Praadnya.jpg'
+import kousthubha from '../assets/Kousthubha/Kousthubha.jpg'
+
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -13,6 +15,12 @@ const Home = () => {
       path: "/praadnya-h", 
       image: praadnya
     },
+    { 
+      id: 2, 
+      name: "Kousthubha", 
+      path: "/kousthubha", 
+      image: kousthubha
+    }
     // Add other interns similarly
   ];
 
