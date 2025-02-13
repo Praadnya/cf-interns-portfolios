@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { MenuIcon, X } from "lucide-react";
 
-import praadnya from '../assets/Praadnya.jpg';
 import kenny from '../assets/Kenny.jpg';
-
 import varuns from '../assets/varuns.jpg';
 import harshita from '../assets/Harshita.jpg';
 import Aditi from "../assets/Aditi.jpg";
