@@ -15,6 +15,7 @@ import praadnya from '../assets/Praadnya/Praadnya.jpg'
 import Ujwal from '../assets/Ujwal.png'
 import aditya from '../assets/aditya-profile.jpg';
 import avani from '../assets/avani.jpg'
+import Satvik from '../assets/Satvik.jpeg'
 
 
 const Home = () => {
@@ -96,9 +97,9 @@ const Home = () => {
     },
     { 
       id: 13, 
-      name: "Sathvik", 
-      path: "/sathvik", 
-      // image: praadnya
+      name: "Satvik", 
+      path: "/Satvik", 
+      image: Satvik
     },
     { 
       id: 14, 

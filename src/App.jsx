@@ -21,7 +21,7 @@ import Avani from "./pages/profiles/Avani";
 import PraadnyaH from "./pages/profiles/Praadnya/MainApp";
 // import Ujwal from "./pages/profiles/Ujwal";
 import Aditya from "./pages/profiles/Aditya";
-
+import Satvik from "./pages/profiles/Satvik's Component"
 
 
 const App = () => {
@@ -49,10 +49,12 @@ const App = () => {
           <Route path="education" element={<KennyEducation />} />
           <Route path="experiences" element={<KennyExperiences />} />
           <Route path="projects" element={<KennyProjects />} />
+          <Route path="/Satvik" element={<Satvik/>}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
   );
+  
 };
 
 
