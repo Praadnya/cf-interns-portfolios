@@ -2,17 +2,104 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { MenuIcon, X } from "lucide-react";
-import praadnya from '../assets/Praadnya.jpg'
+
+import praadnya from '../assets/Praadnya/Praadnya.jpg'
+import Ujwal from '../assets/Ujwal.png'
+
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const interns = [
     { 
       id: 1, 
-      name: "Praadnya", 
+      name: "Praadnya H", 
       path: "/praadnya-h", 
       image: praadnya
     },
+    { 
+      id: 2, 
+      name: "Aditi Goyal", 
+      path: "/aditi-goyal", 
+      // image: praadnya
+    },
+    { 
+      id: 3, 
+      name: "Harshita", 
+      path: "/harshita-k", 
+      // image: praadnya
+    },
+    { 
+      id: 4, 
+      name: "Rickvi", 
+      path: "/rickvi-b", 
+      // image: praadnya
+    },
+    { 
+      id: 5, 
+      name: "Chinthana", 
+      path: "/chinthana", 
+      // image: praadnya
+    },
+    { 
+      id: 6, 
+      name: "Kousthubha", 
+      path: "/kousthubha", 
+      // image: praadnya
+    },
+    { 
+      id: 7, 
+      name: "Diya", 
+      path: "/diya", 
+      // image: praadnya
+    },
+    { 
+      id: 8, 
+      name: "Avani", 
+      path: "/avani", 
+      // image: praadnya
+    },
+    { 
+      id: 9, 
+      name: "Dhatri", 
+      path: "/dhatri", 
+      // image: praadnya
+    },
+    { 
+      id: 10, 
+      name: "Rashmi", 
+      path: "/rashmi", 
+      // image: praadnya
+    },
+    { 
+      id: 11, 
+      name: "Smriti", 
+      path: "/smriti", 
+      // image: praadnya
+    },
+    { 
+      id: 11, 
+      name: "Kenny", 
+      path: "/kenny", 
+      // image: praadnya
+    },
+    { 
+      id: 11, 
+      name: "Sathvik", 
+      path: "/sathvik", 
+      // image: praadnya
+    },
+    { 
+      id: 11, 
+      name: "Aditya", 
+      path: "/aditya", 
+      // image: praadnya
+    },
+    { 
+      id: 12, 
+      name: "Ujwal Harish", 
+      path: "/ujwal", 
+      image: Ujwal
+    }
     // Add other interns similarly
   ];
 
@@ -75,6 +162,14 @@ const Home = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
+                {/* <div className="relative w-32 h-32 aspect-square rounded-full overflow-hidden border-4 border-gray-200 group-hover:border-blue-500 transition-all duration-300">
+                  <img
+                    src={intern.image}
+                    alt={intern.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div> */}
+
                 <h3 className="mt-4 text-lg font-semibold text-gray-800 group-hover:text-blue-500">
                   {intern.name}
                 </h3>

@@ -1,8 +1,10 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import PraadnyaH from "./pages/profiles/PraadnyaH";
 import Avani from "./pages/profiles/Avani";
+import PraadnyaH from "./pages/profiles/Praadnya/MainApp";
+import Ujwal from "./pages/profiles/Ujwal";
+
 
 const App = () => {
   return (
@@ -11,6 +13,7 @@ const App = () => {
         <Route path="/" element={<Home />}></Route>
         <Route path="/avani" element={<Avani />}></Route>
         <Route path="/praadnya-h" element={<PraadnyaH />}></Route>
+        <Route path="/ujwal" element={<Ujwal Harish />}></Route>
       </Routes>
     </BrowserRouter>
   );
