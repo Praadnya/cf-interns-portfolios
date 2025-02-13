@@ -1,0 +1,65 @@
+/* ================= Experience Page Specific Styles ================= */
+
+/* Container for the Experience page – black background with white text.
+   The container is centered and does not span the entire width. */
+   .experience-page{
+    background-color: #971292;          /* Black background */
+    color: #fff;                     /* White text for readability */
+    padding: 2rem;
+    width: 80%;                      /* Container spans 80% of the viewport */
+    max-width: 800px;                /* Maximum width for readability */
+    margin: 2rem auto;               /* Centered horizontally with vertical margins */
+    border-radius: 8px;
+  }
+  
+  /* Title for the Experience page */
+  .experience-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  /* Styling for each experience item "card" */
+  .experience-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly lighter overlay */
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+  
+  /* Heading for each experience item */
+  .experience-title-item {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Styling for company, duration, and description text */
+  .experience-company,
+  .experience-duration,
+  .experience-description {
+    font-size: 1.2rem;
+    margin: 0.25rem 0;
+  }
+  
+  /* Back to Portfolio button styling – placed at the bottom */
+  .back-button-exp {
+    display: block;
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #c94b4b;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 2rem;
+  }
+  
+  .back-button-exp:hover {
+    background-color: #ddd;
+  }
+  
