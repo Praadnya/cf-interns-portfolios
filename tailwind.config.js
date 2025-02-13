@@ -1,12 +1,18 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
 export default {
-    darkMode: ["class"],
-    content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  darkMode: ["class"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
   	extend: {
+       backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+		fontFamily: {
+			pixel: ['"Press Start 2P"', 'cursive'],
+		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
@@ -75,8 +81,13 @@ export default {
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out'
-  		}
-  	}
+  		},
+  	},
+      colors: {
+      ...colors,
+      primary: colors.purple,
+      secondary: colors.pink,
+    },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
