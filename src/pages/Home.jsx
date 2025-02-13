@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { MenuIcon, X } from "lucide-react";
+
+import Dhatri from '../assets/Dhatri.jpg'
 import rickvi from '../assets/rickvi_pic.jpeg'
 import kousthubha from '../assets/Kousthubha/Kousthubha.jpg'
 import praadnya from '../assets/Praadnya/Praadnya.jpg'
@@ -63,7 +65,7 @@ const Home = () => {
       id: 9, 
       name: "Dhatri", 
       path: "/dhatri", 
-      // image: praadnya
+      image: Dhatri
     },
     { 
       id: 10, 

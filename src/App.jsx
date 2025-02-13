@@ -1,6 +1,9 @@
-import React from "react";
+//
+// import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+
+import DhatriLayout from "./pages/profiles/Dhatri/DComponents/DhatriLayout.jsx";
 import Rickvi from "./pages/profiles/Rickvi";
 import Kousthubha from "./pages/profiles/Kousthubha/KousthuhbaHome";
 import Avani from "./pages/profiles/Avani";
@@ -15,6 +18,7 @@ const App = () => {
         <Route path="/" element={<Home />}></Route>
         <Route path="/avani" element={<Avani />}></Route>
         <Route path="/praadnya-h" element={<PraadnyaH />}></Route>
+        <Route path="/dhatri" element={<DhatriLayout />}></Route>
         <Route path="/rickvi" element={<Rickvi />}></Route>
         <Route path="/kousthubha" element={<Kousthubha />}></Route>
         <Route path="/ujwal" element={<Ujwal Harish />}></Route>
@@ -22,5 +26,6 @@ const App = () => {
     </BrowserRouter>
   );
 };
+
 
 export default App;
