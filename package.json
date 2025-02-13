@@ -5,11 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start":"vite"
   },
   "dependencies": {
+    "@fontsource/outfit": "^5.1.1",
+    "@fontsource/roboto": "^5.1.1",
+    "@fontsource/press-start-2p": "^5.1.1",
     "@radix-ui/react-accordion": "^1.2.3",
     "@radix-ui/react-slot": "^1.1.2",
     "axios": "^1.7.9",
@@ -18,9 +23,12 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "cf-interns": "file:",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "framer-motion": "^12.4.1",
     "localforage": "^1.10.0",
-    "lucide-react": "^0.474.0",
+    "lucide-react": "^0.475.0",
     "match-sorter": "^8.0.0",
     "mongoose": "^8.10.0",
     "react": "^19.0.0",
