@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 
 const Ujwal = () => {
   const [internData, setInternData] = useState(null);
@@ -27,79 +26,98 @@ const Ujwal = () => {
 
   if (loading) return <div className="flex justify-center items-center min-h-screen">Loading...</div>;
   if (error) return <div className="flex justify-center items-center min-h-screen text-red-500">Error: {error}</div>;
+  if (!internData) return <div className="flex justify-center items-center min-h-screen">No data found.</div>;
 
   return (
-    <div className="min-h-screen w-full flex justify-center items-center bg-gradient-to-br from-teal-50 to-indigo-50 p-8">
-      <div className="max-w-5xl w-full bg-white rounded-2xl shadow-lg overflow-hidden">
+    <div className="h-screen w-screen flex justify-center items-center bg-gradient-to-br from-teal-50 to-indigo-50 p-8">
+      <div className="max-w-screen-lg w-full bg-white rounded-2xl shadow-lg overflow-hidden">
         {/* Profile Header */}
-        <div className="bg-gradient-to-r from-teal-600 to-indigo-600 p-10 text-center">
-          <h1 className="text-4xl font-extrabold text-white">{internData.name}</h1>
-          <p className="text-gray-200 mt-1">{internData.email}</p>
-          <p className="text-gray-300">{internData.phone}</p>
+        <div className="bg-gradient-to-r from-teal-600 to-indigo-600 p-10 text-center  flex flex-col items-center gap-2">
+        <p className="text-gray-200  ">{internData.email}</p>
+        <p className="text-gray-200  ">{internData.email}</p>
+          
+          <p className="text-4xl font-extrabold text-white mt-80">{internData.name}</p>
+          <p className="text-gray-200  ">{internData.email}</p>
+          <p className="text-gray-300 ">{internData.phone}</p>
         </div>
-  
-        {/* Projects Section */}
+
+        {/* Sections Wrapper */}
         <div className="p-10">
+          {/* Projects Section */}
           <h2 className="text-3xl font-bold text-gray-900 mb-6 border-b-4 border-teal-500 pb-2">
             Projects
           </h2>
-          {internData.projects.map((project) => (
-            <div
-              key={project.id}
-              className="mb-6 p-6 bg-gray-100 rounded-xl hover:shadow-md transition-shadow duration-300"
-            >
-              <h3 className="text-xl font-semibold text-gray-900">{project.name}</h3>
-              <p className="text-gray-700 mt-2">
-                <span className="font-medium text-teal-600">Tech Stack:</span> {project.techStack}
-              </p>
-              <p className="text-gray-700 mt-2">{project.description}</p>
-            </div>
-          ))}
-        </div>
-  
-        {/* Education Section */}
-        <div className="p-10 bg-gray-50">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 border-b-4 border-teal-500 pb-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {internData.projects?.length > 0 ? (
+              internData.projects.map((project) => (
+                <div
+                  key={project.id}
+                  className="p-6 bg-gray-100 rounded-xl hover:shadow-md transition-shadow duration-300"
+                >
+                  <h3 className="text-xl font-semibold text-gray-900">{project.name}</h3>
+                  <p className="text-gray-700 mt-2">
+                    <span className="font-medium text-teal-600">Tech Stack:</span> {project.techStack}
+                  </p>
+                  <p className="text-gray-700 mt-2">{project.description}</p>
+                </div>
+              ))
+            ) : (
+              <p className="text-gray-600">No projects available.</p>
+            )}
+          </div>
+
+          {/* Education Section */}
+          <h2 className="text-3xl font-bold text-gray-900 mt-10 mb-6 border-b-4 border-teal-500 pb-2">
             Education
           </h2>
-          {internData.education.map((edu) => (
-            <div
-              key={edu.id}
-              className="mb-6 p-6 bg-white rounded-xl hover:shadow-md transition duration-300"
-            >
-              <h3 className="text-xl font-semibold text-gray-900">{edu.institution}</h3>
-              <p className="text-gray-700 mt-2">
-                {edu.startYear} - {edu.endYear} | CGPA:{" "}
-                <span className="font-medium text-teal-600">{edu.cgpa}</span>
-              </p>
-            </div>
-          ))}
-        </div>
-  
-        {/* Experience Section */}
-        <div className="p-10">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 border-b-4 border-teal-500 pb-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {internData.education?.length > 0 ? (
+              internData.education.map((edu) => (
+                <div
+                  key={edu.id}
+                  className="p-6 bg-white rounded-xl hover:shadow-md transition duration-300"
+                >
+                  <h3 className="text-xl font-semibold text-gray-900">{edu.institution}</h3>
+                  <p className="text-gray-700 mt-2">
+                    {edu.startYear} - {edu.endYear} | CGPA:{" "}
+                    <span className="font-medium text-teal-600">{edu.cgpa}</span>
+                  </p>
+                </div>
+              ))
+            ) : (
+              <p className="text-gray-600">No education details available.</p>
+            )}
+          </div>
+
+          {/* Experience Section */}
+          <h2 className="text-3xl font-bold text-gray-900 mt-10 mb-6 border-b-4 border-teal-500 pb-2">
             Experience
           </h2>
-          {internData.experiences.map((exp) => (
-            <div
-              key={exp.id}
-              className="mb-6 p-6 bg-gray-100 rounded-xl hover:shadow-md transition-shadow duration-300"
-            >
-              <h3 className="text-xl font-semibold text-gray-900">{exp.title}</h3>
-              <p className="text-gray-700 mt-2">
-                <span className="font-medium text-teal-600">Company:</span> {exp.company}
-              </p>
-              <p className="text-gray-700 mt-2">
-                <span className="font-medium text-teal-600">Duration:</span>{" "}
-                {new Date(exp.startDate).toLocaleDateString()} -{" "}
-                {exp.currentJob ? "Present" : new Date(exp.endDate).toLocaleDateString()}
-              </p>
-              <p className="text-gray-700 mt-2">{exp.description}</p>
-            </div>
-          ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {internData.experiences?.length > 0 ? (
+              internData.experiences.map((exp) => (
+                <div
+                  key={exp.id}
+                  className="p-6 bg-gray-100 rounded-xl hover:shadow-md transition-shadow duration-300"
+                >
+                  <h3 className="text-xl font-semibold text-gray-900">{exp.title}</h3>
+                  <p className="text-gray-700 mt-2">
+                    <span className="font-medium text-teal-600">Company:</span> {exp.company}
+                  </p>
+                  <p className="text-gray-700 mt-2">
+                    <span className="font-medium text-teal-600">Duration:</span>{" "}
+                    {new Date(exp.startDate).toLocaleDateString()} -{" "}
+                    {exp.currentJob ? "Present" : new Date(exp.endDate).toLocaleDateString()}
+                  </p>
+                  <p className="text-gray-700 mt-2">{exp.description}</p>
+                </div>
+              ))
+            ) : (
+              <p className="text-gray-600">No experience details available.</p>
+            )}
+          </div>
         </div>
-  
+
         {/* Footer */}
         <div className="bg-gradient-to-r from-teal-600 to-indigo-600 p-6 text-center">
           <p className="text-white text-sm font-light">
@@ -108,8 +126,7 @@ const Ujwal = () => {
         </div>
       </div>
     </div>
-  );   
+  );
 };
-
 
 export default Ujwal;
