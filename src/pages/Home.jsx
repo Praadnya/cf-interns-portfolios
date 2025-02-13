@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { MenuIcon, X } from "lucide-react";
 
-
+import varuns from '../assets/varuns.jpg';
+import harshita from '../assets/Harshita.jpg';
 import Aditi from "../assets/Aditi.jpg";
 import chinthana from '../assets/Chinthana.jpeg'
 import Dhatri from '../assets/Dhatri.jpg'
@@ -11,6 +12,8 @@ import rickvi from '../assets/rickvi_pic.jpeg'
 import kousthubha from '../assets/Kousthubha/Kousthubha.jpg'
 import praadnya from '../assets/Praadnya/Praadnya.jpg'
 import Ujwal from '../assets/Ujwal.png'
+import aditya from '../assets/aditya-profile.jpg';
+import avani from '../assets/avani.jpg'
 import Satvik from '../assets/Satvik.jpeg'
 
 const Home = () => {
@@ -23,17 +26,16 @@ const Home = () => {
       path: "/praadnya-h", 
       image: praadnya
     },
-    { 
-      id: 2, 
+    {
       name: "Aditi Goyal", 
       path: "/aditi", 
       image: Aditi
     },
     { 
       id: 3, 
-      name: "Harshita", 
-      path: "/harshita-k", 
-      // image: praadnya
+      name: "Harshita",
+      path: "/Harshita-Khajuria",
+      image: harshita
     },
     { 
       id: 4, 
@@ -63,7 +65,7 @@ const Home = () => {
       id: 8, 
       name: "Avani", 
       path: "/avani", 
-      // image: praadnya
+      image: avani
     },
     { 
       id: 9, 
@@ -99,7 +101,7 @@ const Home = () => {
       id: 14, 
       name: "Aditya", 
       path: "/aditya", 
-      // image: praadnya
+      image: aditya
     },
     { 
       id: 15, 
@@ -107,7 +109,13 @@ const Home = () => {
       path: "/ujwal", 
       image: Ujwal
     },
-   
+    {
+      id: 16, 
+      name: "Varun S", 
+      path: "/varuns", 
+      image: varuns
+    }
+
     // Add other interns similarly
 
   ];
