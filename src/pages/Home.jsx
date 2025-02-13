@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { MenuIcon, X } from "lucide-react";
 
+import varuns from '../assets/varuns.jpg';
 import harshita from '../assets/Harshita.jpg';
 import Aditi from "../assets/Aditi.jpg";
 import chinthana from '../assets/Chinthana.jpeg'
@@ -24,8 +25,7 @@ const Home = () => {
       path: "/praadnya-h", 
       image: praadnya
     },
-    { 
-      id: 2, 
+    {
       name: "Aditi Goyal", 
       path: "/aditi", 
       image: Aditi
@@ -108,7 +108,13 @@ const Home = () => {
       path: "/ujwal", 
       image: Ujwal
     },
-   
+    {
+      id: 16, 
+      name: "Varun S", 
+      path: "/varuns", 
+      image: varuns
+    }
+
     // Add other interns similarly
 
   ];
