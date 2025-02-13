@@ -3,7 +3,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 
-
+import Harshita from "./pages/profiles/Harshita/Harshita";
 import AditiGoyal from "./pages/profiles/AditiGoyal/AditiGoyal";
 import Chinthana from "./pages/profiles/Chinthana";
 import DhatriLayout from "./pages/profiles/Dhatri/DComponents/DhatriLayout.jsx";
@@ -22,6 +22,7 @@ const App = () => {
         <Route path="/" element={<Home />}></Route>
         <Route path="/avani" element={<Avani />}></Route>
         <Route path="/praadnya-h" element={<PraadnyaH />}></Route>
+        <Route path="/Harshita-Khajuria" element={<Harshita />}></Route>
         <Route path="/chinthana-mj" element={<Chinthana />}></Route>
         <Route path="/dhatri" element={<DhatriLayout />}></Route>
         <Route path="/rickvi" element={<Rickvi />}></Route>

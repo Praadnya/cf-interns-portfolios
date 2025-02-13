@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { MenuIcon, X } from "lucide-react";
 
-
+import harshita from '../assets/Harshita.jpg';
 import Aditi from "../assets/Aditi.jpg";
 import chinthana from '../assets/Chinthana.jpeg'
 import Dhatri from '../assets/Dhatri.jpg'
@@ -32,9 +32,9 @@ const Home = () => {
     },
     { 
       id: 3, 
-      name: "Harshita", 
-      path: "/harshita-k", 
-      // image: praadnya
+      name: "Harshita",
+      path: "/Harshita-Khajuria",
+      image: harshita
     },
     { 
       id: 4, 
