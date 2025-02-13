@@ -2,6 +2,9 @@
 // import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+
+
+import AditiGoyal from "./pages/profiles/AditiGoyal/AditiGoyal";
 import Chinthana from "./pages/profiles/Chinthana";
 import DhatriLayout from "./pages/profiles/Dhatri/DComponents/DhatriLayout.jsx";
 import Rickvi from "./pages/profiles/Rickvi";
@@ -23,6 +26,7 @@ const App = () => {
         <Route path="/rickvi" element={<Rickvi />}></Route>
         <Route path="/kousthubha" element={<Kousthubha />}></Route>
         <Route path="/ujwal" element={<Ujwal Harish />}></Route>
+        <Route path="/Aditi" element={<AditiGoyal />}></Route>
       </Routes>
     </BrowserRouter>
   );
