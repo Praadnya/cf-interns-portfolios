@@ -12,6 +12,7 @@ import Kousthubha from "./pages/profiles/Kousthubha/KousthuhbaHome";
 import Avani from "./pages/profiles/Avani";
 import PraadnyaH from "./pages/profiles/Praadnya/MainApp";
 import Ujwal from "./pages/profiles/Ujwal";
+import Aditya from "./pages/profiles/Aditya";
 
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/kousthubha" element={<Kousthubha />}></Route>
         <Route path="/ujwal" element={<Ujwal Harish />}></Route>
         <Route path="/Aditi" element={<AditiGoyal />}></Route>
+        <Route path="/aditya" element={<Aditya />}></Route>
       </Routes>
     </BrowserRouter>
   );

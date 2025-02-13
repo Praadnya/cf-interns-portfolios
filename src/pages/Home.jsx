@@ -11,6 +11,7 @@ import rickvi from '../assets/rickvi_pic.jpeg'
 import kousthubha from '../assets/Kousthubha/Kousthubha.jpg'
 import praadnya from '../assets/Praadnya/Praadnya.jpg'
 import Ujwal from '../assets/Ujwal.png'
+import aditya from '../assets/aditya-profile.jpg';
 
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -98,7 +99,7 @@ const Home = () => {
       id: 14, 
       name: "Aditya", 
       path: "/aditya", 
-      // image: praadnya
+      image: aditya
     },
     { 
       id: 15, 
