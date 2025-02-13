@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import PraadnyaH from "./pages/profiles/PraadnyaH";
+import PraadnyaH from "./pages/profiles/Praadnya/MainApp";
 import Ujwal from "./pages/profiles/Ujwal";
+
 
 const App = () => {
   return (
