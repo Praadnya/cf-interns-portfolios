@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import PraadnyaH from "./pages/profiles/PraadnyaH";
-import Ujwal from "./pages/profiles/Ujwal";
+import VarunS from "./pages/profiles/VarunS";
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
       <Routes> 
         <Route path="/" element={<Home />}></Route>
         <Route path="/praadnya-h" element={<PraadnyaH />}></Route>
-        <Route path="/ujwal" element={<Ujwal Harish />}></Route>
+        <Route path="/varuns" element={<VarunS />}></Route>
       </Routes>
     </BrowserRouter>
   );
