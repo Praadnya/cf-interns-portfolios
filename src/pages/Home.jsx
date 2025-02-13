@@ -2,7 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { MenuIcon, X } from "lucide-react";
+
 import praadnya from '../assets/Praadnya/Praadnya.jpg'
+import Ujwal from '../assets/Ujwal.png'
+
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -91,6 +94,12 @@ const Home = () => {
       path: "/aditya", 
       // image: praadnya
     },
+    { 
+      id: 12, 
+      name: "Ujwal Harish", 
+      path: "/ujwal", 
+      image: Ujwal
+    }
     // Add other interns similarly
   ];
 

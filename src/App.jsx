@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import PraadnyaH from "./pages/profiles/Praadnya/MainApp";
+import Ujwal from "./pages/profiles/Ujwal";
+
 
 const App = () => {
   return (
@@ -9,6 +11,7 @@ const App = () => {
       <Routes> 
         <Route path="/" element={<Home />}></Route>
         <Route path="/praadnya-h" element={<PraadnyaH />}></Route>
+        <Route path="/ujwal" element={<Ujwal Harish />}></Route>
       </Routes>
     </BrowserRouter>
   );
