@@ -2,11 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { MenuIcon, X } from "lucide-react";
-
+import rickvi from '../assets/rickvi_pic.jpeg'
 import kousthubha from '../assets/Kousthubha/Kousthubha.jpg'
 import praadnya from '../assets/Praadnya/Praadnya.jpg'
 import Ujwal from '../assets/Ujwal.png'
-
 
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -33,8 +32,8 @@ const Home = () => {
     { 
       id: 4, 
       name: "Rickvi", 
-      path: "/rickvi-b", 
-      // image: praadnya
+      path: "/rickvi", 
+      image: rickvi
     },
     { 
       id: 5, 
