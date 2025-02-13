@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { MenuIcon, X } from "lucide-react";
 
+import kousthubha from '../assets/Kousthubha/Kousthubha.jpg'
 import praadnya from '../assets/Praadnya/Praadnya.jpg'
 import Ujwal from '../assets/Ujwal.png'
+
 
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -44,7 +46,7 @@ const Home = () => {
       id: 6, 
       name: "Kousthubha", 
       path: "/kousthubha", 
-      // image: praadnya
+      image: kousthubha
     },
     { 
       id: 7, 
