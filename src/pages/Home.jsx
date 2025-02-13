@@ -12,6 +12,7 @@ import kousthubha from '../assets/Kousthubha/Kousthubha.jpg'
 import praadnya from '../assets/Praadnya/Praadnya.jpg'
 import Ujwal from '../assets/Ujwal.png'
 import aditya from '../assets/aditya-profile.jpg';
+import avani from '../assets/avani.jpg'
 
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -63,7 +64,7 @@ const Home = () => {
       id: 8, 
       name: "Avani", 
       path: "/avani", 
-      // image: praadnya
+      image: avani
     },
     { 
       id: 9, 
