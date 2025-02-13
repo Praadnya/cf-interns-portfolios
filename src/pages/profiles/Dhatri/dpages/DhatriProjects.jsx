@@ -2,25 +2,25 @@ function Projects() {
   const projects = [
     {
       name: "Shakthi",
-      description: "WEbsite for Women Empowerment",
+      description: "Website for Women Empowerment, related to finance.",
       github: "https://github.com/DhatriC123/Shakti",
       liveDemo: "https://project-one.com"
     },
     {
-      name: "Project Two",
-      description: "Description of Project Two.",
-      github: "https://github.com/project-two",
+      name: "Car Management Service System",
+      description: "Used Spring boot and MySQL. Has users, customers, service, vehicles and invoice management.",
+      github: "https://github.com/DhatriC123/springcsms/tree/master",
       liveDemo: "https://project-two.com"
     },
     {
-      name: "Project Three",
-      description: "Description of Project Three.",
-      github: "https://github.com/project-three",
+      name: "Twitter agentic Bot",
+      description: "Twitter bot that post cool AI updates",
+      github: "https://github.com/DhatriC123/TwitterBot",
       liveDemo: "https://project-three.com"
     },
     {
-      name: "Project Four",
-      description: "Description of Project Three.",
+      name: "Chatroom",
+      description: "Create different rooms ,ad caht with friends! Built using Python SocketIO",
       github: "https://github.com/project-three",
       liveDemo: "https://project-three.com"
     }

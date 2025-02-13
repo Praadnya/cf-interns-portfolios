@@ -42,7 +42,7 @@ function Home() {
                       <p className="relative pl-6 leading-relaxed my-4 text-[#8892b0]
                           before:content-['>'] before:absolute before:left-0 
                           before:text-[#233554]">
-                          I am an SDE intern at Cars24
+                          I am an SDE intern at Cars24. I love learning and building cool projects!
                       </p>
                   </div>
               </div>
