@@ -22,7 +22,7 @@ import PraadnyaH from "./pages/profiles/Praadnya/MainApp";
 // import Ujwal from "./pages/profiles/Ujwal";
 import Aditya from "./pages/profiles/Aditya";
 import Satvik from "./pages/profiles/Satvik's Component/Satvik.jsx"
-
+import KeshavPortfolio from "./pages/profiles/KeshavPortfolio";
 
 const App = () => {
   return (
@@ -51,6 +51,7 @@ const App = () => {
           <Route path="projects" element={<KennyProjects />} />
         </Route>
         <Route path="/Satvik" element={<Satvik/>}></Route>
+        <Route path="/photo-h" element={<KeshavPortfolio />} />
       </Routes>
     </BrowserRouter>
   );

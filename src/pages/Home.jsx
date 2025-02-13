@@ -16,7 +16,7 @@ import Ujwal from '../assets/Ujwal.png'
 import aditya from '../assets/aditya-profile.jpg';
 import avani from '../assets/avani.jpg'
 import Satvik from '../assets/Satvik.jpeg'
-
+import keshav from '../assets/photo.jpg';
 
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -118,6 +118,12 @@ const Home = () => {
       name: "Varun S", 
       path: "/varuns", 
       image: varuns
+    },
+    { 
+      id: 17, 
+      name: "Keshav", 
+      path: "/photo-h", 
+      image: keshav
     }
 
     // Add other interns similarly
