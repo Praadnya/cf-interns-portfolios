@@ -19,7 +19,7 @@ import Rickvi from "./pages/profiles/Rickvi";
 import Kousthubha from "./pages/profiles/Kousthubha/KousthuhbaHome";
 import Avani from "./pages/profiles/Avani";
 import PraadnyaH from "./pages/profiles/Praadnya/MainApp";
-// import Ujwal from "./pages/profiles/Ujwal";
+import Ujwal from "./pages/profiles/Ujwal";
 import Aditya from "./pages/profiles/Aditya";
 import Satvik from "./pages/profiles/Satvik's Component/Satvik.jsx"
 import KeshavPortfolio from "./pages/profiles/KeshavPortfolio";
@@ -40,7 +40,7 @@ const App = () => {
         <Route path="/dhatri" element={<DhatriLayout />}></Route>
         <Route path="/rickvi" element={<Rickvi />}></Route>
         <Route path="/kousthubha" element={<Kousthubha />}></Route>
-        {/* <Route path="/ujwal" element={<Ujwal Harish />}></Route> */}
+        <Route path="/ujwal" element={<Ujwal Harish />}></Route>
         <Route path="/Aditi" element={<AditiGoyal />}></Route>
         <Route path="/aditya" element={<Aditya />}></Route>
         <Route path="/kenny" element={<Kenny />}>

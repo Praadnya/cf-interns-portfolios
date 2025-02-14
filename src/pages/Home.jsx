@@ -3,7 +3,21 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { MenuIcon, X } from "lucide-react";
 
-import Ujwal from '../assets/Ujwal.png'
+import Ujwal from '../assets/Ujwal.jpeg'
+import kenny from '../assets/Kenny.jpg';
+import varuns from '../assets/varuns.jpg';
+import harshita from '../assets/Harshita.jpg';
+import Aditi from "../assets/Aditi.jpg";
+import chinthana from '../assets/Chinthana.jpeg'
+import Dhatri from '../assets/Dhatri.jpg'
+import rickvi from '../assets/rickvi_pic.jpeg'
+import kousthubha from '../assets/Kousthubha/Kousthubha.jpg'
+import praadnya from '../assets/Praadnya/Praadnya.jpg'
+import aditya from '../assets/aditya-profile.jpg';
+import avani from '../assets/avani.jpg'
+import Satvik from '../assets/Satvik.jpeg'
+import keshav from '../assets/photo.jpg';
+import Jagadeesh from "../assets/Jagadeesh.jpg";
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
