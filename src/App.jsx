@@ -8,7 +8,7 @@ import KennyPersonal from "./pages/profiles/Kenny/personal";
 import KennyEducation from "./pages/profiles/Kenny/education";
 import KennyExperiences from "./pages/profiles/Kenny/experience";
 import KennyProjects from "./pages/profiles/Kenny/projects";
-
+import Jagadeesh from "./pages/profiles/Jagadeesh";
 
 import VarunS from "./pages/profiles/VarunS";
 import Harshita from "./pages/profiles/Harshita/Harshita";
@@ -52,6 +52,7 @@ const App = () => {
         </Route>
         <Route path="/Satvik" element={<Satvik/>}></Route>
         <Route path="/photo-h" element={<KeshavPortfolio />} />
+        <Route path="/jagadeesh" element={<Jagadeesh/>}></Route>
       </Routes>
     </BrowserRouter>
   );
