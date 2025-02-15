@@ -32,7 +32,7 @@ const Home = () => {
   return (
     <div className="min-h-screen w-full flex flex-col">
       {/* Navbar - added w-full */}
-      <nav className="bg-white shadow-lg w-full">
+      <nav className="bg shadow-lg w-full">
         <div className="w-full max-w-[2000px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             <div className="flex-shrink-0">

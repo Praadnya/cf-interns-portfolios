@@ -11,21 +11,21 @@ const AboutItems = () => {
         <AboutItem
           icon={GithubIcon}
           title={"Open Source"}
-          href="https://github.com/KumarSampurn"
+          href="https://github.com/aditigoyal291"
         />
       </div>
       <div className="flex justify-center items-center">
         <AboutItem
           icon={Leetcode}
           title={"Problem Solving"}
-          href="https://leetcode.com/_Epsilon/"
+          href="https://leetcode.com/u/aditigoyal291/"
         />
       </div>
       <div className="flex justify-center items-center">
         <AboutItem
           icon={Kaggle}
           title={"Kaggle Notebooks"}
-          href="https://www.kaggle.com/kumarsampurn"
+          href="https://www.kaggle.com/aditigoyalpes"
         />
       </div>
     </div>
