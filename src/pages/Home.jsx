@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button";
 import { MenuIcon, X } from "lucide-react";
 
 
+import smriti from "../assets/smritiraj.jpeg"; // Make sure this image exists in /assets
+
+
 import Ujwal from '../assets/Ujwal.jpeg'
 import kenny from '../assets/Kenny.jpg';
 import varuns from '../assets/varuns.jpg';
@@ -21,10 +24,12 @@ import keshav from '../assets/photo.jpg';
 import Jagadeesh from "../assets/Jagadeesh.jpg";
 import rashmi from '../assets/rashmi.jpg'
 
+
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const interns = [
+
     { 
       id: 1, 
       name: "Praadnya H", 
@@ -90,7 +95,7 @@ const Home = () => {
       id: 11, 
       name: "Smriti", 
       path: "/smriti", 
-      // image: praadnya
+      image: smriti
     },
     { 
       id: 12, 
@@ -137,6 +142,7 @@ const Home = () => {
 
     // Add other interns similarly
 
+
   ];
 
   return (
@@ -152,6 +158,10 @@ const Home = () => {
             </div>
 
             <div className="md:hidden">
+
+              <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                {isMenuOpen ? <X className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
+
               <Button
                 variant="ghost"
                 size="icon"
@@ -162,6 +172,7 @@ const Home = () => {
                 ) : (
                   <MenuIcon className="h-6 w-6" />
                 )}
+
               </Button>
             </div>
 
@@ -198,6 +209,7 @@ const Home = () => {
 
 
           {/* Updated grid to ensure full width coverage */}
+
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 w-full place-items-center">
             {interns.map((intern) => (

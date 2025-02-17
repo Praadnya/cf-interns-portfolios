@@ -4,6 +4,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 
 
+import SmritiRaj from "./pages/profiles/Smriti";
+
+
+
 import Kenny from "./pages/profiles/Kenny/Kenny";
 import KennyPersonal from "./pages/profiles/Kenny/personal";
 import KennyEducation from "./pages/profiles/Kenny/education";
@@ -27,6 +31,7 @@ import KeshavPortfolio from "./pages/profiles/KeshavPortfolio";
 import RashmiPR from "./pages/profiles/RashmiPR";
 
 
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -37,6 +42,9 @@ const App = () => {
         <Route path="/" element={<Home />}></Route>
         <Route path="/avani" element={<Avani />}></Route>
         <Route path="/praadnya-h" element={<PraadnyaH />}></Route>
+
+        <Route path="/profiles/smriti" element={<SmritiRaj/>} />
+
 
         <Route path="/varuns" element={<VarunS />}></Route>
         <Route path="/Harshita-Khajuria" element={<Harshita />}></Route>
@@ -58,6 +66,7 @@ const App = () => {
         <Route path="/photo-h" element={<KeshavPortfolio />} />
         <Route path="/jagadeesh" element={<Jagadeesh/>}></Route>
         <Route path="/rashmi-p-r" element={<RashmiPR />}></Route>
+
 
       </Routes>
     </BrowserRouter>
