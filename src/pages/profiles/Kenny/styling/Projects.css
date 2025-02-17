@@ -1,0 +1,65 @@
+/* ================= Projects Page Specific Styles ================= */
+
+/* Container for the Projects page – dark background with white text.
+   The container is centered and does not span the entire width. */
+   .projects-page {
+    background-color: #185a94; /* Use the same background color as your Education page or adjust as needed */
+    color: #fff;              /* White text for readability */
+    padding: 2rem;
+    width: 80%;               /* Container spans 80% of the viewport */
+    max-width: 800px;         /* Maximum width */
+    margin: 2rem auto;        /* Centered horizontally with vertical margins */
+    border-radius: 8px;
+  }
+  
+  /* Title for the Projects page */
+  .projects-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Styling for each project item "card" */
+  .project-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly lighter overlay */
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+  
+  /* Heading for each project item */
+  .project-name {
+    color: black;  /* Adjust if you prefer a different color for project names */
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Styling for the tech stack and description text */
+  .project-tech,
+  .project-description {
+    font-size: 1.2rem;
+    margin: 0.25rem 0;
+  }
+  
+  /* Back to Portfolio button styling – placed at the bottom */
+  .back-button-proj {
+    display: block;
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 2rem;
+  }
+  
+  .back-button-proj:hover {
+    background-color: #ddd;
+  }
+  

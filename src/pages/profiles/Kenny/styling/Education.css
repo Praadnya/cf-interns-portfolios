@@ -1,0 +1,65 @@
+/* ================= Education Page Specific Styles ================= */
+
+/* Container for the Education page – black background with white text.
+   The container is centered and does not span the entire width. */
+   .education-page {
+    background-color: #438f5a;          /* Black background */
+    color: #fff;                     /* White text for readability */
+    padding: 2rem;
+    width: 80%;                      /* Adjust width as needed */
+    max-width: 800px;                /* Maximum width */
+    margin: 2rem auto;               /* Centered with top/bottom margin */
+    border-radius: 8px;
+  }
+  
+  /* Title for the Education page */
+  .education-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;                /* Align text to the left */
+  }
+  
+  /* Styling for each education item "card" */
+  .education-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly lighter black overlay */
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+  
+  /* Heading for each education item */
+  .education-institution {
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Duration and CGPA text styling */
+  .education-duration,
+  .education-cgpa {
+    font-size: 1.2rem;
+    margin: 0.25rem 0;
+  }
+  
+  /* Back to Portfolio button styling – placed at the bottom */
+  .back-button-edu {
+    display: block;
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 2rem;
+  }
+  
+  .back-button-edu:hover {
+    background-color: #ddd;
+  }
+  
