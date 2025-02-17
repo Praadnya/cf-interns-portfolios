@@ -161,7 +161,7 @@ const Home = () => {
 
               <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                 {isMenuOpen ? <X className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
-
+              </Button>
               <Button
                 variant="ghost"
                 size="icon"
