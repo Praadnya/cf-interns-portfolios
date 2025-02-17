@@ -3,6 +3,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 
+
 import Kenny from "./pages/profiles/Kenny/Kenny";
 import KennyPersonal from "./pages/profiles/Kenny/personal";
 import KennyEducation from "./pages/profiles/Kenny/education";
@@ -23,6 +24,8 @@ import Ujwal from "./pages/profiles/Ujwal";
 import Aditya from "./pages/profiles/Aditya";
 import Satvik from "./pages/profiles/Satvik's Component/Satvik.jsx"
 import KeshavPortfolio from "./pages/profiles/KeshavPortfolio";
+import RashmiPR from "./pages/profiles/RashmiPR";
+
 
 const App = () => {
   return (
@@ -34,6 +37,7 @@ const App = () => {
         <Route path="/" element={<Home />}></Route>
         <Route path="/avani" element={<Avani />}></Route>
         <Route path="/praadnya-h" element={<PraadnyaH />}></Route>
+
         <Route path="/varuns" element={<VarunS />}></Route>
         <Route path="/Harshita-Khajuria" element={<Harshita />}></Route>
         <Route path="/chinthana-mj" element={<Chinthana />}></Route>
@@ -53,6 +57,8 @@ const App = () => {
         <Route path="/Satvik" element={<Satvik/>}></Route>
         <Route path="/photo-h" element={<KeshavPortfolio />} />
         <Route path="/jagadeesh" element={<Jagadeesh/>}></Route>
+        <Route path="/rashmi-p-r" element={<RashmiPR />}></Route>
+
       </Routes>
     </BrowserRouter>
   );

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { MenuIcon, X } from "lucide-react";
 
+
 import Ujwal from '../assets/Ujwal.jpeg'
 import kenny from '../assets/Kenny.jpg';
 import varuns from '../assets/varuns.jpg';
@@ -18,6 +19,8 @@ import avani from '../assets/avani.jpg'
 import Satvik from '../assets/Satvik.jpeg'
 import keshav from '../assets/photo.jpg';
 import Jagadeesh from "../assets/Jagadeesh.jpg";
+import rashmi from '../assets/rashmi.jpg'
+
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -80,8 +83,8 @@ const Home = () => {
     { 
       id: 10, 
       name: "Rashmi", 
-      path: "/rashmi", 
-      // image: praadnya
+      path: "/rashmi-p-r", 
+      image: rashmi
     },
     { 
       id: 11, 
