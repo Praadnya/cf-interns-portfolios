@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Tahoma';
+    /* font-family: 'Tahoma'; */
     src: url('src/assets/Diya/fonts/tahoma.ttf') format('truetype');
   }
   
   body {
     margin: 0;
     font-family: 'Tahoma', sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 100vh;
   }
   
@@ -95,6 +95,7 @@
     padding: 16px;
     overflow: auto;
     height: calc(100% - 30px);
+    color: black;
   }
   
   /* Taskbar */
