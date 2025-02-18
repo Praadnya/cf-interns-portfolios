@@ -117,13 +117,14 @@ const AditiGoyal = () => {
             </div>
           </section>
         </div>
+
+        <AboutSection />
+        <Skills />
+        <ExEd data={portfolioData} />
+        <ProjectSectionn data={portfolioData.projects} />
+        <EmailSection />
+        <Footer />
       </main>
-      <AboutSection />
-      <Skills />
-      <ExEd data={portfolioData} />
-      <ProjectSectionn data={portfolioData.projects} />
-      <EmailSection />
-      <Footer />
     </>
   );
 };

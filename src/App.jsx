@@ -40,7 +40,7 @@ const App = () => {
         <Route path="/dhatri" element={<DhatriLayout />}></Route>
         <Route path="/rickvi" element={<Rickvi />}></Route>
         <Route path="/kousthubha" element={<Kousthubha />}></Route>
-        <Route path="/ujwal" element={<Ujwal Harish />}></Route>
+        <Route path="/ujwal" element={<Ujwal />}></Route>
         <Route path="/Aditi" element={<AditiGoyal />}></Route>
         <Route path="/aditya" element={<Aditya />}></Route>
         <Route path="/kenny" element={<Kenny />}>
