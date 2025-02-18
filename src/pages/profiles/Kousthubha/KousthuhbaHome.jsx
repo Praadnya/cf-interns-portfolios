@@ -229,7 +229,7 @@ const KousthubhaHome = () => {
   );
 
   return (
-    <div className="min-h-screen bg-pink-100 p-14 font-pixel relative">
+    <div className="min-h-screen bg-pink-100 p-14 font-pixel relative text-black">
       {/* Audio Control */}
       <button 
         onClick={toggleMusic} 

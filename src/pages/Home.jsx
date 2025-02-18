@@ -23,6 +23,7 @@ import Satvik from '../assets/Satvik.jpeg'
 import keshav from '../assets/photo.jpg';
 import Jagadeesh from "../assets/Jagadeesh.jpg";
 import rashmi from '../assets/rashmi.jpg'
+import Diya from '../assets/Diya/picture.jpeg';
 
 
 const Home = () => {
@@ -71,7 +72,7 @@ const Home = () => {
       id: 7, 
       name: "Diya", 
       path: "/diya", 
-      // image: praadnya
+      image: Diya
     },
     { 
       id: 8, 
@@ -146,14 +147,14 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen w-full flex flex-col">
+    <div className="min-h-screen w-full flex flex-col bg-white text-black">
       {/* Navbar */}
       <nav className="bg-white shadow-lg w-full">
         <div className="w-full max-w-[2000px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             <div className="flex-shrink-0">
               <h1 className="text-2xl font-bold text-gray-800">
-                Cars24 CFSPL Interns
+                CARS24 CFSPL Interns
               </h1>
             </div>
 
@@ -282,7 +283,7 @@ const Home = () => {
           </div>
           <div className="mt-8 pt-8 border-t border-gray-700 text-center">
             <p className="text-gray-300">
-              &copy; {new Date().getFullYear()} Cars24 CFSPL. All rights
+              &copy; {new Date().getFullYear()} CARS24 CFSPL. All rights
               reserved.
             </p>
           </div>

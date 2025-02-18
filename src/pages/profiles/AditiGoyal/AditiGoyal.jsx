@@ -51,7 +51,7 @@ const AditiGoyal = () => {
   }
 
   return (
-    <>
+    
       <main className="min-h-screen bg-[#121212] text-white scroll-smooth">
         <Navbar />
         <Gradient />
@@ -117,14 +117,14 @@ const AditiGoyal = () => {
             </div>
           </section>
         </div>
-      </main>
       <AboutSection />
       <Skills />
       <ExEd data={portfolioData} />
       <ProjectSectionn data={portfolioData.projects} />
       <EmailSection />
       <Footer />
-    </>
+      </main>
+  
   );
 };
 
