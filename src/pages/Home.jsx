@@ -23,6 +23,7 @@ import Satvik from '../assets/Satvik.jpeg'
 import keshav from '../assets/photo.jpg';
 import Jagadeesh from "../assets/Jagadeesh.jpg";
 import rashmi from '../assets/rashmi.jpg'
+import Diya from '../assets/Diya/picture.jpeg';
 
 
 const Home = () => {
@@ -71,7 +72,7 @@ const Home = () => {
       id: 7, 
       name: "Diya", 
       path: "/diya", 
-      // image: praadnya
+      image: Diya
     },
     { 
       id: 8, 
