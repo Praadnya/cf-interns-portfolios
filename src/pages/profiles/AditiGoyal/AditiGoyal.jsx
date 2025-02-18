@@ -1,14 +1,6 @@
-// import React, { useEffect, useState } from "react";
-// import { Fade } from "react-awesome-reveal";
-// import { Link } from "react-router-dom";
-// import { TypeAnimation } from "react-type-animation";
-// import viz from "../../../assets/Aditi/viz.gif";
-// import viz2 from "../../../assets/Aditi/viz2.gif";
-// Make sure axios is imported
-
 import React, { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom"; // Renamed to avoid confusion
 import { TypeAnimation } from "react-type-animation";
 import viz from "../../../assets/Aditi/viz.gif";
 import viz2 from "../../../assets/Aditi/viz2.gif";
@@ -35,6 +27,13 @@ const AditiGoyal = () => {
     } catch (error) {
       console.error("Error fetching data:", error);
       setLoading(false);
+    }
+  };
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -84,12 +83,12 @@ const AditiGoyal = () => {
                   </h1>
 
                   <div>
-                    <Link
-                      to="/#contact"
+                    <button
+                      onClick={scrollToContact}
                       className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white cursor-pointer"
                     >
                       Let's Talk
-                    </Link>
+                    </button>
                     <a
                       href={pdfFile}
                       download="Aditi_Resume.pdf"
@@ -110,7 +109,7 @@ const AditiGoyal = () => {
               </Fade>
 
               <Fade triggerOnce>
-                <div className="rounded-full absolute w-[26.5%] -bottom-0 right-0 hidden lg:block">
+                <div className="rounded-full absolute w-[22%] -bottom-0 right-0 hidden lg:block">
                   <img src={viz2} alt="My GIF" />
                 </div>
               </Fade>
@@ -122,7 +121,7 @@ const AditiGoyal = () => {
         <Skills />
         <ExEd data={portfolioData} />
         <ProjectSectionn data={portfolioData.projects} />
-        <EmailSection />
+        <EmailSection id="contact" />
         <Footer />
       </main>
     </>
