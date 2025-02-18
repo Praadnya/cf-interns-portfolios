@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 import { Card } from '@/components/ui/card';
 
 // Import project images
-import animatrixImage from '../../../assets/praadnya/animatrix.png';
-import clinicImage from '../../../assets/praadnya/clinic.png';
-import zomatoImage from '../../../assets/praadnya/zomato.png';
-import leaveImage from '../../../assets/praadnya/leave.png';
+import animatrixImage from '../../../assets/Praadnya/animatrix.png';
+import clinicImage from '../../../assets/Praadnya/clinic.png';
+import zomatoImage from '../../../assets/Praadnya/zomato.png';
+import leaveImage from '../../../assets/Praadnya/leave.png';
 
 const getProjectImage = (projectName) => {
   const imageMap = {

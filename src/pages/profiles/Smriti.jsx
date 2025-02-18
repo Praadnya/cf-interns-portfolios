@@ -48,8 +48,8 @@ const Portfolio = () => {
             </span>
           </p>
           <div className="flex gap-6 mt-6">
-            <a href="/resume.pdf" target="_blank" className="px-8 py-3 bg-gray-900 text-white hover:bg-gray-800 transition-colors duration-300">View Resume</a>
-            <a href="/resume.pdf" download className="px-8 py-3 border border-gray-900 text-white hover:bg-gray-800 transition-colors duration-300">Download Resume</a>
+            <a href="/resume/smritiraj_resume.pdf" target="_blank" className="px-8 py-3 bg-gray-900 text-white hover:bg-gray-800 transition-colors duration-300">View Resume</a>
+            <a href="/resume/smritiraj_resume.pdf" download className="px-8 py-3 border border-gray-900 text-white hover:bg-gray-800 transition-colors duration-300">Download Resume</a>
           </div>
           {/* CONTACT DETAILS */}
           <div className="flex gap-6 mt-6 text-2xl">
