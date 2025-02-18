@@ -29,7 +29,7 @@ import Aditya from "./pages/profiles/Aditya";
 import Satvik from "./pages/profiles/Satvik's Component/Satvik.jsx"
 import KeshavPortfolio from "./pages/profiles/KeshavPortfolio";
 import RashmiPR from "./pages/profiles/RashmiPR";
-
+import Diya from "./pages/profiles/Diya/diya-app.jsx";
 
 
 const App = () => {
@@ -66,7 +66,7 @@ const App = () => {
         <Route path="/photo-h" element={<KeshavPortfolio />} />
         <Route path="/jagadeesh" element={<Jagadeesh/>}></Route>
         <Route path="/rashmi-p-r" element={<RashmiPR />}></Route>
-
+        <Route path="/diya" element={<Diya />}></Route>
 
       </Routes>
     </BrowserRouter>
